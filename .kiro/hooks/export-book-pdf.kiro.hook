@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "Export Learning Book to PDF",
+  "description": "When any chapter markdown file in the Learning folder is edited, recompiles all chapters into a single PDF (AI-Engineering-Book.pdf) for mobile reading.",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "/Users/amoagraw/Documents/Learning/*.md"
+    ]
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "cd /Users/amoagraw/Documents/Learning && cat 01-*.md 02-*.md 03-*.md 04-*.md 05-*.md 06-*.md 07-*.md 08-*.md 09-*.md 10-*.md 11-*.md 12-*.md 13-*.md 14-*.md 15-*.md 16-*.md > /tmp/book-chapters.md && pandoc AI-Engineering-Book.md -o AI-Engineering-Book.pdf --pdf-engine=xelatex -V geometry:margin=0.8in -V fontsize=10pt -V mainfont=\"Arial Unicode MS\" -V monofont=\"Menlo\" --toc --toc-depth=2"
+  }
+}
