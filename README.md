@@ -46,6 +46,12 @@ Written in a direct, example-heavy style. Each chapter builds on the previous on
 | 15 | [Safety, Security & Multi-Tenancy](15-safety-security-and-multi-tenancy.md) | Prompt injection, data leakage, tenant isolation, permission boundaries |
 | 16 | [Tradeoffs & Production Decisions](16-tradeoffs-and-production-decision-making.md) | Fine-tune vs RAG vs ICL vs distillation, 4-axis tradeoff space, decision framework |
 
+### Part V: Paradigms
+
+| # | Chapter | Core Topic |
+|---|---------|-----------|
+| 17 | [Autoregression vs Diffusion, and Sparsity via MoE](17-autoregression-vs-diffusion.md) | Why LLMs are autoregressive, discrete diffusion, DiffusionGemma, AR for images (VAR), hybrids, the speed argument, MoE vs Per-Layer Embeddings |
+
 ## PDF
 
 A compiled PDF of all chapters is included for mobile reading: **[AI-Engineering-Book.pdf](AI-Engineering-Book.pdf)**
